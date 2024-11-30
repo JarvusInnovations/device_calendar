@@ -332,6 +332,7 @@ class CalendarDelegate(binding: ActivityPluginBinding?, context: Context) :
         values.put(CalendarContract.Calendars.CALENDAR_DISPLAY_NAME, calendarName)
         values.put(CalendarContract.Calendars.ACCOUNT_NAME, localAccountName)
         values.put(CalendarContract.Calendars.ACCOUNT_TYPE, CalendarContract.ACCOUNT_TYPE_LOCAL)
+        values.put(CalendarContract.Calendars.VISIBLE, 1)
         values.put(
             CalendarContract.Calendars.CALENDAR_ACCESS_LEVEL,
             CalendarContract.Calendars.CAL_ACCESS_OWNER
